@@ -12,11 +12,12 @@ Starting Apache kafka locally:
     #./gradlew jar -PscalaVersion=<version-details>
 2. Start zoopkeeper
     
-    # bin/zookeeper config/zookeeper.properties
+    #bin/zookeeper config/zookeeper.properties
 3. Start broker
     Here I am creating 2 brokers (I have copied server.properties to 1 & 2)
     
     #bin/kafka-server-start.sh config/server1.properties
+    
     #bin/kafka-server-start.sh config/server2.properties
 4. Creating topics
     
