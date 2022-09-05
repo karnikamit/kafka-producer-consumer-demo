@@ -2,10 +2,11 @@ package com.personal.kafka.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
+@ComponentScan(basePackages = "com.personal.kafka.service.Consumer")
 @Service
 public class Consumer {
 
